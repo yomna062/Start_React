@@ -26,7 +26,10 @@ function App() {
         { path: '*', element: <Not_found/> },  // Handle unknown routes
       ],
     },
-  ]);
+  ]
+, {
+  basename: '/Start_React'
+});
 
   return (
     <div>
