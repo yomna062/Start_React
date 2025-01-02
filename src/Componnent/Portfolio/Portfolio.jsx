@@ -69,9 +69,13 @@
 import img1 from "../imgs/images1.png";
 import img2 from "../imgs/images2.png";
 import img3 from "../imgs/images3.png";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 export default function Portfolio() {
+
+  useEffect(() => {
+            document.title = "Portfolio";
+          }, []);
   const [selectedImg, setSelectedImg] = useState(null); // State to store the selected image
 
   const images = [

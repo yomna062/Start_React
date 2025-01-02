@@ -1,5 +1,5 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Home from './Componnent/Home/Home.jsx'; // Adjust the path according to your project structure
 import Contact from './Componnent/Contact/Contact.jsx'; 
 import Portfolio from './Componnent/Portfolio/Portfolio.jsx';
@@ -13,7 +13,7 @@ function App() {
 
 
   // Define routes using createBrowserRouter
-  const routers = createBrowserRouter([
+  const routers = createHashRouter([
     {
       path: '/', 
       element: <Layout />, // Layout component will wrap the children routes
